@@ -1,12 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=Yolo!, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    YOLO!
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>SassyBot v2.0</title>
+
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
+          <h1>Welcome to SassyBot v2.0</h1>
+        </div>
+      </div>
+
+      <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
+          <div class="callout">
+          <form>
+            <div class="grid-x grid-padding-x">
+                <div class="large-12 cell">
+                  <label>Message for Sassy:</label>
+                  <input type="text" placeholder="enter text to send to SassyBot"></textarea>
+                </div>
+              </div>
+              <button type="submit" class="success button">Send to Sassy</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
+          <div class="callout">
+            <h4>Conversation:</h3>
+            <div class="sassy-response"><blockquote class="text-center">Nothing here yet.</blockquote></div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="main.js"></script>
+
 </html>

@@ -1,0 +1,54 @@
+h1 {
+  text-align: center;
+  font-weight: bold !important;
+  text-decoration: underline;
+  margin: 25px !important;
+  color: #666 !important;
+}
+h4 {
+  border-bottom: 1px solid #666;
+}
+.sassy-response{
+    max-height: 250px;
+    overflow-y: scroll;
+}
+
+/* below styles for conversation stolen from: https://codepen.io/swards/pen/gxQmbj */
+.sassy-response {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 15px;
+    border-top: 15px solid #fff;
+  }
+.input, .output {
+  border-radius: 20px;
+  padding: 8px 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+  max-width: 75%;
+}
+.input {
+  align-items: flex-start;
+  margin-right: 25%;
+  background-color: #eee;
+  position: relative;
+}
+.output {
+  align-items: flex-end;
+  color: white;
+  margin-left: 25%;
+  background: linear-gradient(to bottom, #00D0EA 0%, #0085D1 100%);
+  background-attachment: fixed;
+  position: relative;
+}
+@media only screen and (min-width: 500px) {
+  .output {
+    margin-left: calc(100% - 380px);  
+  }
+  .input, .output {  
+    max-width: 380px;
+  }
+}
